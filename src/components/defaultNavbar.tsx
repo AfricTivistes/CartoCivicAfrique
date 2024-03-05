@@ -194,7 +194,7 @@ function NavList() {
       <AccountListMenu />
       <Typography
         as="a"
-        href="/"
+        href="/actualites"
         variant="small"
         color="blue-gray"
         className="font-normal"
