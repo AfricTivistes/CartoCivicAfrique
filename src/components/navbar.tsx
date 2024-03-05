@@ -113,11 +113,11 @@ function ProfileMenu() {
 const accountItems = [
   {
     title: "Login",
-    href: "/astro-launch-ui/login"
+    href: "/login"
   },
   {
     title: "Sign Up",
-    href: "/astro-launch-ui/signup"
+    href: "/signup"
   }
 ];
 
@@ -181,15 +181,15 @@ function AccountListMenu() {
 const navListMenuItems = [
   {
     title: "About Us",
-    href: "/astro-launch-ui/about"
+    href: "/about"
   },
   {
     title: "Landing Page",
-    href: "/astro-launch-ui/landing"
+    href: "/landing"
   },
   {
     title: "404",
-    href: "/astro-launch-ui/404"
+    href: "/404"
   },
 ];
  
@@ -347,7 +347,7 @@ export default function ComplexNavbar() {
             <i className="fab fa-github text-xl leading-none" aria-hidden="true"></i>
           </Button>
         </a>
-        <a href="/astro-launch-ui/#examplePages">
+        <a href="/#examplePages">
           <Button color="dark">Get started</Button>
         </a>
       </div>

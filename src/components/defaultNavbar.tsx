@@ -38,12 +38,12 @@ const colors = {
 // account pages menu
 const accountItems = [
   {
-    title: "Login",
-    href: "/astro-launch-ui/login"
+    title: "Guides",
+    href: "/login"
   },
   {
-    title: "Sign Up",
-    href: "/astro-launch-ui/signup"
+    title: "Documents",
+    href: "/signup"
   }
 ];
 
@@ -74,7 +74,7 @@ function AccountListMenu() {
               {...triggers}
               className="hidden items-center gap-2 text-blue-gray-900 lg:flex lg:rounded-full"
             >
-              <Square3Stack3DIcon className="h-[18px] w-[18px]" /> Account{" "}
+              <Square3Stack3DIcon className="h-[18px] w-[18px]" /> Ressources{" "}
               <ChevronDownIcon
                 strokeWidth={2}
                 className={`h-3 w-3 transition-transform ${
@@ -94,7 +94,7 @@ function AccountListMenu() {
         </MenuList>
       </Menu>
       <MenuItem className="flex items-center gap-2 text-blue-gray-900 lg:hidden">
-        <Square3Stack3DIcon className="h-[18px] w-[18px]" /> Account{" "}
+        <Square3Stack3DIcon className="h-[18px] w-[18px]" /> Ressources{" "}
       </MenuItem>
       <ul className="ml-6 flex w-full flex-col gap-1 lg:hidden">
         {renderItems}
@@ -106,15 +106,15 @@ function AccountListMenu() {
 // nav list menu
 const navListMenuItems = [
   {
-    title: "About Us",
+    title: "Projet",
     href: "/astro-launch-ui/about"
   },
   {
-    title: "Landing Page",
+    title: "Équipe",
     href: "/astro-launch-ui/landing"
   },
   {
-    title: "404",
+    title: "Partenaires",
     href: "/astro-launch-ui/404"
   }
 ];
@@ -146,7 +146,7 @@ function NavListMenu() {
               {...triggers}
               className="hidden items-center gap-2 text-blue-gray-900 lg:flex lg:rounded-full"
             >
-              <Square3Stack3DIcon className="h-[18px] w-[18px]" /> Pages{" "}
+              À Propos{" "}
               <ChevronDownIcon
                 strokeWidth={2}
                 className={`h-3 w-3 transition-transform ${
@@ -166,7 +166,7 @@ function NavListMenu() {
         </MenuList>
       </Menu>
       <MenuItem className="flex items-center gap-2 text-blue-gray-900 lg:hidden">
-        <Square3Stack3DIcon className="h-[18px] w-[18px]" /> Pages{" "}
+        <Square3Stack3DIcon className="h-[18px] w-[18px]" /> À Propos{" "}
       </MenuItem>
       <ul className="ml-6 flex w-full flex-col gap-1 lg:hidden">
         {renderItems}
@@ -179,17 +179,39 @@ function NavList() {
   return (
     <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1">
       <NavListMenu />
-      <AccountListMenu />
       <Typography
         as="a"
-        href="https://www.creative-tim.com/learning-lab/astro/quick-start/astro-launch-ui/"
+        href="/"
         variant="small"
         color="blue-gray"
         className="font-normal"
       >
         <ListItem className="flex items-center gap-2 py-2 pr-4">
           <CubeTransparentIcon className="h-[18px] w-[18px]" />
-          Docs
+          Initiatives
+        </ListItem>
+      </Typography>
+      <AccountListMenu />
+      <Typography
+        as="a"
+        href="/"
+        variant="small"
+        color="blue-gray"
+        className="font-normal"
+      >
+        <ListItem className="flex items-center gap-2 py-2 pr-4">
+          Actualités
+        </ListItem>
+      </Typography>
+      <Typography
+        as="a"
+        href="/"
+        variant="small"
+        color="blue-gray"
+        className="font-normal"
+      >
+        <ListItem className="flex items-center gap-2 py-2 pr-4">
+          Contact
         </ListItem>
       </Typography>
     </List>
@@ -212,24 +234,19 @@ export default function Example() {
         <div className="flex items-center justify-between text-blue-gray-900">
           <Typography
             as="a"
-            href="/astro-launch-ui/"
+            href="/"
             variant="h6"
             className="mr-4 cursor-pointer py-1.5 lg:ml-2"
           >
-            AstroLaunch UI
+            Elec Initiatives Afrique
           </Typography>
           <div className="hidden lg:block">
             <NavList />
           </div>
           <div className="hidden gap-2 lg:flex">
-            <a href="./login">
-              <Button variant="text" size="sm" color="blue-gray">
-                Sign In
-              </Button>
-            </a>
-            <a href="/astro-launch-ui/signup">
+            <a href="/signup">
               <Button size="sm" color="dark">
-                Sign Up
+                Engagez-vous
               </Button>
             </a>
           </div>
