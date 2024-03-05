@@ -238,7 +238,7 @@ export default function Example() {
             variant="h6"
             className="mr-4 cursor-pointer py-1.5 lg:ml-2"
           >
-            Elec Initiatives Afrique
+             Initiative 4 Elections
           </Typography>
           <div className="hidden lg:block">
             <NavList />
