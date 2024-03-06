@@ -23,7 +23,6 @@ import {
 
 import ThemeProvider from "./theme-provider";
 
- 
 const colors = {
   blue: "bg-blue-50 text-blue-500",
   orange: "bg-orange-50 text-orange-500",
