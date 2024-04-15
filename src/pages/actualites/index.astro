@@ -1,0 +1,12 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import HeaderLanding from "../../components/news/header"
+import FooterSection from "../../components/landing/footer"
+---
+
+<Layout title="Actualités">
+	<main>
+    <HeaderLanding client:only="react" />
+    <FooterSection client:only="react" />
+  </main>
+</Layout>

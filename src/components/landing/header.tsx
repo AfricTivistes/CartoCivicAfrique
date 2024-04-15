@@ -17,19 +17,19 @@ export function HeroSectionTwo() {
             color="white"
             className="mb-4 !leading-tight lg:text-7xl z-20"
           >
-            Check out our new collection
+            Cartographie Citoyenne <br /> des Élections en Afrique
           </Typography>
           <Typography
             variant="lead"
             color="white"
             className="mb-12 w-full opacity-80 md:w-10/12 lg:w-7/12 mx-auto px-28 z-10"
           >
-            The Basic Starter Pack allows you to fully express your vibrant personality with four grayscale options. Feeling adventurous? Put on a heather gray shirt. Want to be a trendsetter? Try our exclusive colorway: `Orange`. Need to add an extra pop of color to your outfit? Our white shirt has you covered.
+            Découvrez et engagez-vous avec les initiatives d'observation citoyenne, les actions de la société civile et les données cruciales qui façonnent la démocratie sur notre continent. Ensemble, construisons l'avenir électoral de l'Afrique.
           </Typography>
           <div className="w-auto mx-auto">
             <div className="flex items-center">
               <Button color="dark" size="lg" className="w-full z-10">
-                Show new arrival
+              Explorez
               </Button>
             </div>
           </div>

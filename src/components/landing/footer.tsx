@@ -68,15 +68,14 @@ export function FooterTwo() {
         <div className="mt-16 flex flex-wrap items-end justify-center gap-y-4 gap-x-8 border-t border-blue-gray-50 py-6 md:justify-between">
           <div className="text-center md:text-start">
             <Typography variant="h4" color="blue-gray" className="mb-2">
-              Move faster with AstroLaunch UI
+              Initiative 4 Elections
             </Typography>
             <Typography color="gray" className="font-normal">
-              Save countless hours of design and ship great looking designs
-              faster.
+              Cartographie des initiatives d’observation citoyenne des élections en Afrique
             </Typography>
           </div>
           <Typography color="gray" className="text-center font-normal">
-            &copy; {currentYear} Creative Tim, All rights reserved.
+            &copy; {currentYear} Africtivistes, All rights reserved.
           </Typography>
         </div>
       </div>
