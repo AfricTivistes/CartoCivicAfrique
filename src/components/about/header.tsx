@@ -4,7 +4,7 @@ import {
   Typography,
 } from "@material-tailwind/react";
 import ThemeProvider from "../theme-provider";
-import Navbar from "../navbar";
+import Navbar from "../defaultNavbar";
 import {
   ArrowSmallRightIcon,
 } from "@heroicons/react/24/outline";
