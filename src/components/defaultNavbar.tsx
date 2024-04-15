@@ -106,15 +106,15 @@ function AccountListMenu() {
 const navListMenuItems = [
   {
     title: "Projet",
-    href: "/astro-launch-ui/about"
+    href: "/about"
   },
   {
     title: "Équipe",
-    href: "/astro-launch-ui/landing"
+    href: "/landing"
   },
   {
     title: "Partenaires",
-    href: "/astro-launch-ui/404"
+    href: "/404"
   }
 ];
  
