@@ -37,7 +37,7 @@ export function FooterTwo() {
       <div className="container mx-auto">
         <div className="grid grid-cols-1 justify-between gap-4 md:grid-cols-2">
           <Typography variant="h4" className="mb-6">
-            AstroLaunch UI
+            Initiative 4 Elections
           </Typography>
           <div className="grid grid-cols-3 justify-between gap-4">
             {links.map(({ title, items }) => (
