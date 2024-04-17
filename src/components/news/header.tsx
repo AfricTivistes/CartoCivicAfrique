@@ -21,23 +21,23 @@ export function HeroSectionTwo() {
       <header className="h-full w-screen place-items-center bg-white px-8 py-28">
         <div className="container mx-auto grid items-center">
         <Carousel className="rounded-xl" autoplay={true}>
-        <Card className="w-full flex-row">
+        <Card className="w-full lg:flex-row">
             <CardHeader
                 shadow={false}
                 floated={false}
-                className="m-0 w-3/5 shrink-0 rounded-r-none"
+                className="m-0 sm:w-full lg:w-3/5 shrink-0 rounded-r-none"
             >
                 <img
                 src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80"
                 alt="card-image"
-                className="h-full w-full object-cover"
+                className="sm:h-80 w-full lg:h-full object-cover"
                 />
             </CardHeader>
             <CardBody>
                 <Typography variant="h6" color="gray" className="mb-4 uppercase">
                 startups
                 </Typography>
-                <Typography variant="h4" color="blue-gray" className="mb-2">
+                <Typography variant="h3" color="blue-gray" className="mb-2">
                 Lyft launching cross-platform service this week
                 </Typography>
                 <Typography color="gray" className="mb-8 font-normal">
@@ -67,23 +67,23 @@ export function HeroSectionTwo() {
                 </a>
             </CardBody>
         </Card>
-        <Card className="w-full flex-row">
+        <Card className="w-full lg:flex-row">
             <CardHeader
                 shadow={false}
                 floated={false}
-                className="m-0 w-3/5 shrink-0 rounded-r-none"
+                className="m-0 sm:w-full lg:w-3/5 shrink-0 rounded-r-none"
             >
                 <img
                 src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80"
                 alt="card-image"
-                className="h-full w-full object-cover"
+                className="sm:h-80 w-full lg:h-full object-cover"
                 />
             </CardHeader>
             <CardBody>
                 <Typography variant="h6" color="gray" className="mb-4 uppercase">
                 startups
                 </Typography>
-                <Typography variant="h4" color="blue-gray" className="mb-2">
+                <Typography variant="h3" color="blue-gray" className="mb-2">
                 Lyft launching cross-platform service this week
                 </Typography>
                 <Typography color="gray" className="mb-8 font-normal">
@@ -113,23 +113,23 @@ export function HeroSectionTwo() {
                 </a>
             </CardBody>
         </Card>
-        <Card className="w-full flex-row">
+        <Card className="w-full lg:flex-row">
             <CardHeader
                 shadow={false}
                 floated={false}
-                className="m-0 w-3/5 shrink-0 rounded-r-none"
+                className="m-0 sm:w-full lg:w-3/5 shrink-0 rounded-r-none"
             >
                 <img
                 src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80"
                 alt="card-image"
-                className="h-full w-full object-cover"
+                className="sm:h-80 w-full lg:h-full object-cover"
                 />
             </CardHeader>
             <CardBody>
                 <Typography variant="h6" color="gray" className="mb-4 uppercase">
                 startups
                 </Typography>
-                <Typography variant="h4" color="blue-gray" className="mb-2">
+                <Typography variant="h3" color="blue-gray" className="mb-2">
                 Lyft launching cross-platform service this week
                 </Typography>
                 <Typography color="gray" className="mb-8 font-normal">
