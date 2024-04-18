@@ -1,12 +1,21 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import HeaderLanding from "../../components/news/header"
+import BlogPots from "../../components/news/blog"
 import FooterSection from "../../components/landing/footer"
+import { getSinglePage } from "../../lib/contentParser.astro";
+import { sortByDate } from "../../utils/sortFunctions";
+
+const posts = await getSinglePage("actualites");
+const sortedPosts = sortByDate(posts);
+const unePost = sortedPosts.filter((item) => item.data.une);
+const recentPost = sortedPosts.filter((item) => !item.data.une);
 ---
 
 <Layout title="Actualités">
 	<main>
-    <HeaderLanding client:load />
+    <HeaderLanding client:load une={unePost} />
+    <BlogPots/>
     <FooterSection />
   </main>
 </Layout>
