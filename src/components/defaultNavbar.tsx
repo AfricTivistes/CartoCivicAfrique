@@ -244,7 +244,7 @@ export default function Example() {
           </div>
           <div className="hidden gap-2 lg:flex">
             <a href="/signup">
-              <Button size="sm" color="dark">
+              <Button size="sm">
                 Engagez-vous
               </Button>
             </a>
@@ -266,12 +266,12 @@ export default function Example() {
           <NavList />
           <div className="flex w-full flex-nowrap items-center gap-2 lg:hidden">
             <a href="/astro-launch-ui/login">
-              <Button variant="outlined" size="sm" color="dark" fullWidth>
+              <Button variant="outlined" size="sm" fullWidth>
                 Sign In
               </Button>
             </a>
             <a href="/astro-launch-ui/signup">
-              <Button size="sm" fullWidth color="dark">
+              <Button size="sm" fullWidth>
                 Sign Up
               </Button>
             </a>
