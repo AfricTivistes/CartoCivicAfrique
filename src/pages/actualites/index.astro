@@ -14,8 +14,8 @@ const recentPost = sortedPosts.filter((item) => !item.data.une);
 
 <Layout title="Actualités">
 	<main>
-    <HeaderLanding client:load une={unePost} />
-    <BlogPots/>
-    <FooterSection />
+    <HeaderLanding client:only="react" une={unePost} />
+    <BlogPots client:only="react"/>
+    <FooterSection client:only="react"/>
   </main>
 </Layout>
