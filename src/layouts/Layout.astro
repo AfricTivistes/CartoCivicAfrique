@@ -7,14 +7,16 @@ export interface Props {
 const { title, metaDescription } = Astro.props;
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Noto+Sans:300,400,500,600,700,800|PT+Mono:300,400,500,600,700"
+      href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap"
       rel="stylesheet"
     />
     <title>{title} | Cartographie des initiatives d’observation citoyenne des élections en Afrique</title>
@@ -55,6 +57,9 @@ const { title, metaDescription } = Astro.props;
   ></script>
 </html>
 <style is:global>
+  body {
+    font-family: "Onest", sans-serif;
+  }
   code {
     font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
       DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
