@@ -43,19 +43,19 @@ const features = [
 
   {
     icon: <FaceSmileIcon className="h-6 w-6" strokeWidth={2} />,
-    title: "Valorisation des Initiatives de la Société Civile",
+    title: "Valoriser des Initiatives de la Société Civile",
     description:
       "Valoriser les initiatives de la société civile dans le cadre des processus électoraux en Afrique afin de démontrer leur pouvoir transformateur et leur capacité de mobilisation.",
   },
   {
     icon: <LinkIcon className="h-6 w-6" strokeWidth={2} />,
-    title: "Recensement et Promotion des Initiatives Jeunes",
+    title: "Recenser et promouvoir des Initiatives Jeunes",
     description:
-      "Recenser et promouvoir plus de 100 initiatives de jeunes en réponse à la problématique des élections en Afrique.",
+      "Plus de 100 initiatives de jeunes en réponse à la problématique des élections en Afrique.",
   },
   {
     icon: <HeartIcon className="h-6 w-6" strokeWidth={2} />,
-    title: "Mobilisation d'une Communauté en Ligne",
+    title: "Mobiliser d'une Communauté en Ligne",
     description:
       "Mobiliser une communauté en ligne autour de ces initiatives afin de créer un réseau d'échange et d'inspiration pour l'engagement citoyen des jeunes et de la société civile.",
   },
