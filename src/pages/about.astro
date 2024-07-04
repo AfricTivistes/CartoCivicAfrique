@@ -1,20 +1,26 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 import data from "../../public/data.json";
-import HeaderAbout from "../components/about/header"
-import FeaturesAbout from "../components/about/features"
-import TeamAbout from "../components/about/team"
-import TestimonialAbout from "../components/about/testimonials"
-import FooterAbout from "../components/about/footer"
+import HeaderAbout from "../components/about/header";
+import FeaturesAbout from "../components/about/features";
+import FeaturesAbout2 from "../components/about/features2";
+import TeamAbout from "../components/about/team";
+import FooterAbout from "../components/about/footer";
+import Accordion from "../components/about/accordion";
+import Feature from "../components/about/feature";
+import StatsData from "../components/about/stats";
+import Partenaires from "../components/about/partenaires";
+import type { only } from "node:test";
 ---
 
-
-<Layout title="About Us Page">
-	<main>
+<Layout title="A Propos">
+  <main>
     <HeaderAbout client:only="react" />
     <FeaturesAbout client:only="react" />
-    <TestimonialAbout client:only="react" />
+    <Feature client:only="react" />
+    <FeaturesAbout2 client:only="react" />
     <TeamAbout client:only="react" />
+    <Partenaires client:only="react" />
     <FooterAbout client:only="react" />
   </main>
 </Layout>

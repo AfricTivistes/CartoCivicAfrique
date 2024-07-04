@@ -42,25 +42,25 @@ function FeatureCard({ icon, title, children }: FeatureCardProps) {
 const features = [
   {
     icon: <EyeIcon className="h-6 w-6" strokeWidth={2} />,
-    title: "Check our team",
+    title: "Vision",
     description:
-      "For standing out. But the time is now to be okay to be the greatest you. Would you believe in what you believe in, if you were the only one",
+      "Un continent africain doté d’une démocratie prospère et une participation émancipée et responsable.",
   },
   {
     icon: (
       <ChatBubbleOvalLeftEllipsisIcon className="h-6 w-6" strokeWidth={2} />
     ),
-    title: "Support 24/7",
+    title: "Mission",
     description:
-      "As we live, our hearts turn colder. Cause pain is what we go through as we become older. We get insulted by others, lose trust for those others.",
+      "Autonomiser et engager les acteurs de la société civile en Afrique pour défendre la responsabilité et la transparence fondées sur les faits dans les processus électoraux.",
   },
   {
     icon: <BoltIcon className="h-6 w-6" strokeWidth={2} />,
-    title: "Unlimited revisions",
+    title: "Valeurs",
     description:
-      "We get back stabbed by friends. It becomes harder for us to give others a hand. We get our heart broken by people we love.",
+      "L’autonomisation; la coopération et l’engagement; la transparence et la responsabilité; la collaboration",
   },
-  {
+  /*{
     icon: <FaceSmileIcon className="h-6 w-6" strokeWidth={2} />,
     title: "Payments functionality",
     description:
@@ -77,25 +77,24 @@ const features = [
     title: "Prebuilt components",
     description:
       "We're an extension of your customer service team, and all of our resources are free. Chat to our friendly team 24/7 when you need help.",
-  },
+  },*/
 ];
 
 export function FeatureSectionOne() {
   return (
-    <section className="py-28 px-4">
-      <div className="container mx-auto mb-20 text-center">
-        <Typography color="dark" className="mb-2 font-bold text-lg">
-          Social Analytics
+    <section className="">
+      <div className="container mx-auto text-center">
+        <Typography color="dark" className=" font-bold text-lg">
+          Lorem ipsum dolor
         </Typography>
         <Typography variant="h2" color="blue-gray" className="mb-4">
-          Turn your idea into a startup
+          Lorem ipsum dolor consectetur 
         </Typography>
         <Typography
           variant="lead"
           className="mx-auto w-full px-4 text-blue-gray-800 md:w-10/12 lg:w-7/12 lg:px-8"
         >
-          We&apos;re constantly trying to express ourselves and actualize our
-          dreams. If you have the opportunity to play
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
         </Typography>
       </div>
       <div className="container mx-auto grid grid-cols-1 gap-y-20 md:grid-cols-2 lg:grid-cols-3">

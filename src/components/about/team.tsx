@@ -10,9 +10,14 @@ interface TeamCardPropsType {
   name: string;
   title: string;
   desc: string;
+  socials: {
+    linkedin: string;
+    twitter: string;
+    facebook: string;
+  };
 }
 
-function TeamCard({ img, name, title, desc }: TeamCardPropsType) {
+function TeamCard({ img, name, title, desc, socials }: TeamCardPropsType) {
   return (
     <Card color="transparent" shadow={false}>
       <CardHeader floated={false} shadow={false} className="!m-0 !mb-6 h-64">
@@ -32,15 +37,21 @@ function TeamCard({ img, name, title, desc }: TeamCardPropsType) {
         {desc}
       </Typography>
       <div className="flex items-center">
-        <IconButton variant="text" color="light-blue">
-          <i className="fa-brands fa-twitter text-lg not-italic" />
+        <a target="_blank" href={socials.twitter}>
+          <IconButton variant="text" color="dark">
+          <i className="fa-brands fa-x-twitter text-lg not-italic" />
         </IconButton>
+        </a>
+        <a href={socials.linkedin}>
         <IconButton variant="text" color="blue">
           <i className="fa-brands fa-linkedin text-lg not-italic" />
         </IconButton>
-        <IconButton variant="text" color="pink">
-          <i className="fa-brands fa-dribbble text-lg not-italic" />
+        </a>
+        <a href={socials.facebook}>
+        <IconButton variant="text" color="blue">
+          <i className="fa-brands fa-facebook text-lg not-italic" />
         </IconButton>
+        </a>
       </div>
     </Card>
   );
@@ -48,28 +59,47 @@ function TeamCard({ img, name, title, desc }: TeamCardPropsType) {
 
 const members = [
   {
-    img: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dGVhbSUyMG1lbWJlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60",
-    name: "Tina Andrew",
-    title: "Founder & CEO",
-    desc: "Today you are you! That is truer than true! There is no one alive!",
+    img: "/team/cheikh.jpg",
+    name: "Cheikh Fall",
+    title: "Chef de projet",
+    desc: "",
+    socials:{
+      linkedin: "",
+      twitter: "",
+      facebook: ""
+    },
+  },{
+    img: "/team/aisha.jpg",
+    name: "Aisha Dabo",
+    title: "Coordinatrice des activités",
+    desc: "",
+    socials:{
+      linkedin: "",
+      twitter: "",
+      facebook: ""
+    },
   },
   {
-    img: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
-    name: "Phoenix Baker",
-    title: "Engineering Manager",
-    desc: "And I love you like Kanye loves Kanye. We need to restart that.",
+    img: "/team/aziz.jpeg",
+    name: "Abdou Aziz Cissé",
+    title: "Chargé de communication et du plaidoyer",
+    desc: "",
+    socials:{
+      linkedin: "",
+      twitter: "",
+      facebook: ""
+    },
   },
   {
-    img: "https://images.unsplash.com/photo-1573497491765-dccce02b29df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
-    name: "Lana Steiner",
-    title: "Product Manager",
-    desc: "Artist is a term applied to a person who engages in an activity",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
-    name: "Demi Wilkinson",
-    title: "Fronted Developer",
-    desc: "Success is not final, failure is not fatal: it is the courage to continue",
+    img: "/team/adama.jpg",
+    name: "Adama Sadio",
+    title: "Responsable des productions scientifiques",
+    desc: "",
+    socials:{
+      linkedin: "",
+      twitter: "",
+      facebook: ""
+    },
   },
 ];
 
@@ -79,7 +109,7 @@ export function TeamSectionOne() {
       <div className="container mx-auto">
         <div className="mb-24 text-center">
           <Typography color="dark" className="mb-2 !font-semibold text-lg">
-            Our Team
+            Equipe du Projet
           </Typography>
           <Typography variant="h2" color="blue-gray" className="mb-4">
             You are into a great company
